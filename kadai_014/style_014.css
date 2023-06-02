@@ -18,7 +18,9 @@ body {
     border-bottom: solid 3px rgb(115, 115, 114);
 }
 
-.PINK {
+/*同じ名前のidを複数回使用していますが、正しく表示することができました。
+idとclassの使い分けについて教えていただきたいです。*/
+#PINK {
     color: rgb(255,192,203);
 }
 
