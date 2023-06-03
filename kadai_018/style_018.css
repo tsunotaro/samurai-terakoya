@@ -1,0 +1,108 @@
+/*kadai_018の装飾*/
+
+/*top*/
+#top {
+    width: 800px;
+    background-color: #dcc9f4;
+    margin: 20px auto;
+
+    /*↓inlineblockの要素を中央揃え。block要素には適用されない*/
+    text-align: center;
+
+}
+
+.top-child {
+    width: 20%;
+    background-color: #ffd9df;
+
+    /*inlineにすると高さなくなる*/
+    display: inline-block;
+    
+}
+
+/*middle*/
+#middle {
+    width: 800px;
+    height: 800px;
+    background-color: #ffd9df;
+    margin: 20px auto;
+
+    /*親要素用*/
+    position: relative;
+
+}
+
+#mc1 {
+    width: 200px;
+    height: 200px;
+    background-color: #87ceeb;
+
+    position:absolute;
+    top: 100px;
+    left: 100px;
+
+}
+
+#mc2 {
+    width: 200px;
+    height: 200px;
+    background-color: #87ceeb;
+
+    position:absolute;
+    top: 300px;
+    left: 300px;
+  
+}
+
+#mc3 {
+    width: 200px;
+    height: 200px;
+    background-color: #87ceeb;
+
+    position:absolute;
+    top: 500px;
+    left: 500px;
+  
+}
+
+/*bottom*/
+#bottom {
+    width: 800px;
+    height: 300px;
+    background-color: #87ceeb;
+    margin: 20px auto;
+
+    /*親要素用*/
+    position: relative;
+
+}
+
+#bc1 {
+    width: 400px;
+    height: 100px;
+    background-color: #e5dcf0;
+  
+}
+
+#bc2 {
+    width: 400px;
+    height: 100px;
+    background-color: #e5dcf0;
+
+    position: relative;
+    left: 200px;
+  
+}
+
+#bc3 {
+    width: 400px;
+    height: 100px;
+    background-color: #e5dcf0;
+
+    position: relative;
+    left: 400px;
+  
+}
+
+
+
