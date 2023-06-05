@@ -1,0 +1,101 @@
+/*課題22の装飾*/
+
+/*デフォルトの余白をクリア*/
+h1,p,body {
+    margin: 0px;
+}
+p,a {
+    font-size: 20px;
+}
+
+
+/*header*/
+header {
+    margin-bottom: 20px;
+    background-color: rgb(244,79,79);
+
+    /*子要素の中央揃えはtext-align: center;*/
+    /*divのようなブロック要素はmargin: auto;*/
+    text-align: center;
+
+}
+h1 {
+    color: rgb(255,255,255);
+}
+
+
+/*main*/
+main {
+    margin: 10px;
+}
+/*Flexboxのコンテナ*/
+#parent {
+    display: flex;
+    justify-content: space-around;
+}
+/*Flexboxのアイテム*/
+.contents {
+    border: 3px solid rgb(238, 204, 204);
+    text-underline-offset:0.5em;
+    flex-basis: 25%;
+    padding: 10px 15px;
+    margin: 20px 0px;
+    text-align: center;
+}
+h2 {
+    font-size: 25px;
+    
+    /*macは一括×？*/
+    text-decoration-color: rgb(236, 122, 122);
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 3px;
+}
+h2::before {
+    content: "　　●";
+    color: rgb(239, 111, 139);
+}
+/*親要素にある同じ要素の中でn番目のスタイルかつ、要素の最初の文字を装飾する。順不同*/
+p:nth-of-type(2)::first-letter {
+    font-weight: bold;
+    color: rgb(97, 206, 249);
+}
+
+.contents > img {
+    margin: 10px 0px;
+    width: 70%;
+    height: auto;
+}
+
+
+/*footer*/
+footer {
+    background-color: rgb(244, 79, 79);
+    text-align: center;
+}
+a {
+    color: rgb(255, 255, 255);
+}
+a:hover {
+    color: rgb(245, 178, 168);
+}
+a:visited {
+    color: rgb(193, 234, 251);
+}
+
+
+/*レスポンシブ対応(メディアクエリ)*/
+@media screen and (max-width: 768px) {
+    h2 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 25px;
+    }
+    #parent {
+        flex-direction: column;
+    }
+}
+
+
+
